@@ -4,7 +4,7 @@ namespace Services.Repositories
 {
     internal class ConcreteRepository<T> : IRepository<T> where T : User
     {
-        private static readonly List<User> _users = new();
+        private readonly static List<User> _users = new();
 
         public T Add(T entity)
         {
